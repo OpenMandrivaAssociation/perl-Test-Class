@@ -1,15 +1,15 @@
 %define upstream_name    Test-Class
-%define upstream_version 0.36
+%define upstream_version 0.39
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%perl_convert_version 0.39
+Release:	1
 
 Summary:	Write Perl test suites in xUnit style
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.xz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Class-0.39.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Attribute::Handlers)
@@ -65,4 +65,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 + Revision: 606907
 - Removed the dot at the end of the summary
 - import perl-Test-Class
+
 
