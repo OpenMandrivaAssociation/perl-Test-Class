@@ -1,5 +1,5 @@
 %define upstream_name    Test-Class
-%define upstream_version 0.40
+%define upstream_version 0.41
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -65,6 +65,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 + Revision: 606907
 - Removed the dot at the end of the summary
 - import perl-Test-Class
+
 
 
 
