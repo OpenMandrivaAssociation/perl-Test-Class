@@ -1,15 +1,16 @@
 %define upstream_name    Test-Class
-%define upstream_version 0.41
+%define upstream_version 0.42
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Write Perl test suites in xUnit style
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-Class-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Attribute::Handlers)
@@ -55,17 +56,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes LICENSE META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.360.0-3mdv2011.0
-+ Revision: 656969
-- rebuild for updated spec-helper
-
-* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.360.0-2mdv2011.0
-+ Revision: 606907
-- Removed the dot at the end of the summary
-- import perl-Test-Class
-
-
 
 
