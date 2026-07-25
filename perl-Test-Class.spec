@@ -1,16 +1,16 @@
 %define upstream_name    Test-Class
-%define upstream_version 0.42
+%define upstream_version 0.52
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Write Perl test suites in xUnit style
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/szabgab/test-class
+Source0:	https://cpan.metacpan.org/authors/id/S/SZ/SZABGAB/Test-Class-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
